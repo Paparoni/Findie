@@ -1,0 +1,87 @@
+/* Copyright © - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Written by Antwaun Tune <aj.yaboy@outlook.com>, August 2018
+ */
+html, body {
+    overflow: hidden;
+} 
+@font-face {
+    font-family: "SSS";
+    src: url('fonts/SansSerifShaded.ttf') format("truetype");
+}
+@font-face {
+    font-family: 'ghost';
+    src: url('fonts/ghost.ttf') format("truetype");
+}
+#main-container {
+    width: 500px;
+    height: 500px;
+    
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	
+	margin: auto;
+}
+
+.middle {
+
+    
+
+}
+
+.logo {
+   font-family: "SSS";
+    text-align: center;
+    font-size: 86px;
+    color: green;
+}
+#progressbar {
+  margin-top: 100px;
+  position: relative;
+}
+#spotifycontainer {
+    height: 100%;
+    width: 100%;
+}
+#spotifydata-1 {
+    width: 480px;
+    height: 80px;
+    position: relative;
+    margin-top: 200px;
+    right: -290px;
+    border: 20px solid green;
+    border-radius: 25px
+}
+#spotifydata-2 {
+    width: 480px;
+    height: 80px;
+    position: relative;
+    margin-top: 200px;
+    right: -550px;
+    border: 20px solid green;
+    border-radius: 25px;
+}
+#spotifydata-3 {
+    width: 480px;
+    height: 80px;
+    position: relative;
+    top: -362.9px;
+    right: -840px;
+    border: 20px solid green;
+    border-radius: 25px
+}
+#enjoy {
+    width: 350px;
+    height: 250px;
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	
+	margin: auto;
+}
