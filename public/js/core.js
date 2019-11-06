@@ -135,9 +135,9 @@ var runspotifyAlgorithm = function(type, content){
     }
     socket.emit('search', data, function(response){
         var results = response.data;
-        $("#spot1").attr('src', `http://open.spotify.com/embed?uri=spotify:track:${results[0]}`);
-        $("#spot2").attr('src', `http://open.spotify.com/embed?uri=spotify:track:${results[1]}`);
-        $("#spot3").attr('src', `http://open.spotify.com/embed?uri=spotify:track:${results[2]}`);
+        $("#spot1").attr('src', `https://open.spotify.com/embed?uri=spotify:track:${results[0]}`);
+        $("#spot2").attr('src', `https://open.spotify.com/embed?uri=spotify:track:${results[1]}`);
+        $("#spot3").attr('src', `https://open.spotify.com/embed?uri=spotify:track:${results[2]}`);
 
     })
 }

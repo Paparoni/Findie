@@ -3,7 +3,7 @@
  * Proprietary and confidential
  * Written by Antwaun Tune <aj.yaboy@outlook.com>, August 2018
  */
-require('newrelic');
+//require('newrelic');
 const express = require('express');
 const app = express();
 const server = require('http').Server(app);
@@ -27,8 +27,8 @@ var scopes = ['user-read-private', 'user-read-email', 'user-library-read', 'user
 
 
 var credentials = {
-    clientId: "5401e30d339b449583cc8c5d8dd00507",
-    clientSecret: '2dfe8528bd654617a36fabbeff3494a0',
+    clientId: "",
+    clientSecret: '',
 };
 const spotify = new spotifyapi(credentials);
 

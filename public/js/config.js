@@ -6,11 +6,11 @@
 
 var config = {
 
-    hostname: "http://www.findie.xyz",
-    
-    port: "process.env.PORT",
-    
-    client_id: "5401e30d339b449583cc8c5d8dd00507"
+    hostname: "",
+
+    port: "",
+
+    client_id: ""
 
 };
 
