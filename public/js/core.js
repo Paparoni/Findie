@@ -135,9 +135,9 @@ var runspotifyAlgorithm = function(type, content){
     }
     socket.emit('search', data, function(response){
         var results = response.data;
-        $("#spot1").attr('src', `https://open.spotify.com/embed?uri=spotify:track:${results[0]}`);
-        $("#spot2").attr('src', `https://open.spotify.com/embed?uri=spotify:track:${results[1]}`);
-        $("#spot3").attr('src', `https://open.spotify.com/embed?uri=spotify:track:${results[2]}`);
+        $("#spot1").attr('src', `http://open.spotify.com/embed?uri=spotify:track:${results[0]}`);
+        $("#spot2").attr('src', `http://open.spotify.com/embed?uri=spotify:track:${results[1]}`);
+        $("#spot3").attr('src', `http://open.spotify.com/embed?uri=spotify:track:${results[2]}`);
 
     })
 }
@@ -150,13 +150,13 @@ var startSpotifyResults = function() {
 var search = {
 
     type: null,
-    
+
     setType: function(value) {
         search.type = value;
     },
-    
+
     content: [],
-    
+
     setContent: function(val) {
         search.content.push(val)
     },
@@ -171,7 +171,7 @@ app.controller('findieCtrl', function($scope, $http) {
         $("#box2").hide()
         $("#box1").attr("placeholder", "Artist");
         search.setType("artist")
-        
+
     }
     $scope.song = function(){
         $("#dropdown").text('By Song');
@@ -186,7 +186,7 @@ app.controller('findieCtrl', function($scope, $http) {
         search.setType('url')
     }
     $scope.tryAgain = function(){
-        window.location.reload(false); 
+        window.location.reload(false);
     }
     $scope.getStarted = function() {
         if(search.type !== null){
@@ -219,7 +219,7 @@ app.controller('findieCtrl', function($scope, $http) {
             opacity: 0
         }, 1000, "", function(){
             $(this).after(function(){
-              animateLogo();  
+              animateLogo();
             })
         })
     } else {
